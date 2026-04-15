@@ -1,2 +1,2 @@
 # Jubea_Projekt
-Projekt Jubaea Artenschutz. 
+Bauen eines Klassifikators für Jubaea Chilensis
