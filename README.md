@@ -1,6 +1,5 @@
 # Jubea_Projekt
 Bauen eines Bildklassifikators für Jubaea Chilensis, eine vom aussterben bedrohte Palmenart. 
-
 Gerade ist es nur ein Binärerklassifikator, soll in der Zukunft auf andere Arten erweitert werden.
 
 In Dateien sind ein paar Bilder zum Trainieren/Testen. Main.ipynb war der erste Entwurf, der auf der CPU trainiert.
