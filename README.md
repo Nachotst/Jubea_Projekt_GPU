@@ -12,6 +12,9 @@ Jubaea_resnet.pth ist das beste gespeicherte Modell von classificator.ipynb. ~98
 Es wurde Frozen Backbone mit Resnet getestet. Hat zu einer verschlechterung der Acc und des Losses geführt.
 Idee wurde dementsprechend verworfen.
 
-Die gespeicherten vorhin geneannten Modelle waren Fehlerhaft. Deswegen wurde das trainieren und testen neu gestaltet,
+Die gespeicherten vorhin genannten Modelle waren Fehlerhaft. Deswegen wurde das trainieren und testen neu gestaltet,
 indem man nur am Ende einmal testet und nicht bei jeder Epoch. Stattdessen nach jedem Training kommt eine Validation.
+Modell hat durch neues Training eine Acc von 80%
+
+Modell mit mehr Trainingsdaten trainiert, dadurch konnte die Acc auf 87% erhöht werden.
 
