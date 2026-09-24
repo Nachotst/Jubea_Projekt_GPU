@@ -8,3 +8,10 @@ classificator_resnet.ipynb ist die neuere bessere Variante, die mit GPU trainier
 Jubaea_model.pth ist das beste gespeicherte Modell von Main.ipynb. ~75%
 
 Jubaea_resnet.pth ist das beste gespeicherte Modell von classificator.ipynb. ~98%
+
+Es wurde Frozen Backbone mit Resnet getestet. Hat zu einer verschlechterung der Acc und des Losses geführt.
+Idee wurde dementsprechend verworfen.
+
+Die gespeicherten vorhin geneannten Modelle waren Fehlerhaft. Deswegen wurde das trainieren und testen neu gestaltet,
+indem man nur am Ende einmal testet und nicht bei jeder Epoch. Stattdessen nach jedem Training kommt eine Validation.
+
