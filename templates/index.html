@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jubaea-Klassifikator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <p class="eyebrow">Bildklassifikator</p>
+      <h1>Jubaea chilensis</h1>
+      <p class="lede">
+        Ziehe ein Foto in das Feld. Das Modell sagt, ob es sich um die chilenische
+        Honigpalme handelt, und zeigt per Grad-CAM, welche Bildbereiche dafür
+        entscheidend waren.
+      </p>
+    </header>
+
+    <form id="upload-form" class="panel">
+      <label id="drop-zone" class="drop-zone" for="file-input">
+        <input id="file-input" type="file" name="image" accept="image/*" hidden>
+        <div class="drop-copy">
+          <strong>Bild hierher ziehen</strong>
+          <span>oder klicken, um eine Datei zu wählen</span>
+        </div>
+        <img id="preview" class="preview" alt="Vorschau des hochgeladenen Bildes" hidden>
+      </label>
+      <p id="file-name" class="file-name"></p>
+      <button id="submit-btn" type="submit" disabled>Klassifizieren</button>
+      <p id="status" class="status" role="status"></p>
+    </form>
+
+    <section id="result" class="result" hidden>
+      <div class="verdict">
+        <p class="verdict-kicker">Vorhersage</p>
+        <h2 id="class-label"></h2>
+        <p id="confidence-text" class="confidence-text"></p>
+        <div class="bar" aria-hidden="true">
+          <div id="confidence-bar"></div>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <figure>
+          <img id="overlay-img" alt="Originalbild mit Heatmap-Overlay">
+          <figcaption>Overlay: Blick des Modells</figcaption>
+        </figure>
+        <figure>
+          <img id="heatmap-img" alt="Grad-CAM Heatmap">
+          <figcaption>Heatmap</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <footer>
+      Modell: {{ model_name }} · Gerät: {{ device }}
+    </footer>
+  </div>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
