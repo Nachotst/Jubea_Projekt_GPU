@@ -18,3 +18,4 @@ Modell hat durch neues Training eine Acc von 80%
 
 Modell mit mehr Trainingsdaten trainiert, dadurch konnte die Acc auf 87% erhöht werden.
 
+app.py Starten und 127.0.0.1:5000 im Browser ausführen und testen.
