@@ -1,7 +1,7 @@
 # Jubaea-Klassifikator
 
-Ein Bildklassifikator, der ekennt, ob ein hochgeladenes Foto eine Jubaea chilensis (Chilenische Honigpalm), eine vom Aussterben bedrohte Art, zeigt.
-Ausserdem habe ich eine Heatmap erstellt, wodurch sichtbar wird, worauf das Modell achtet.
+Ein Bildklassifikator, der erkennt, ob ein hochgeladenes Foto eine Jubaea chilensis (Chilenische Honigpalm), eine vom Aussterben bedrohte Art, zeigt.
+Außerdem habe ich eine Heatmap erstellt, wodurch sichtbar wird, worauf das Modell achtet.
 
 <p align ="left">
 <img src="Examples/Website.png" width="994" alt="Beispiel der Website">
@@ -10,7 +10,7 @@ Ausserdem habe ich eine Heatmap erstellt, wodurch sichtbar wird, worauf das Mode
 # Sinn des Projekts
 
 Die chilenische Honigpalme ist eine seltene Palmenart, dessen Population stark zurückgegangen ist.
-Da gewöhnliche LLM's manchmal noch Probleme haben mit dem Klassifizieren, wollte ich einen eigenen zuverlässigeren Klassifizierer bauen.
+Da gewöhnliche LLM's manchmal noch Probleme haben mit dem klassifizieren, wollte ich einen eigenen zuverlässigeren Klassifizierer bauen.
 
 <table border="0">
   <tr>
@@ -56,14 +56,14 @@ Es fällt auf, dass das Modell bei Bildern wo die nur die Palme zu sehen ist, au
   </tr>
 </table>
 
-Dabei ist auch ein weiterer Schwachpunkt meines Modells ersichtlich geworden. Bei zb Drohnenaufnahmen bzw Umgebungen, wo die Palme zb zwischen anderen Pflanzen ist, dass Modell nicht aufgrund der Palme klassifiziert, sondern aufgrund der Umgebung.
+Dabei ist auch ein weiterer Schwachpunkt meines Modells ersichtlich geworden. Bei zb Drohnenaufnahmen bzw Umgebungen, wo die Palme zb zwischen anderen Pflanzen ist, hat dass Modell nicht aufgrund der Palme klassifiziert, sondern aufgrund der Umgebung.
 Das Modell hat wahrscheinlich eher die Muster der mediteranen Vegetation gelernt, statt die Palme zu sehen.
 
 <table border="0">
 <tr>
 <td>
 <img src="Examples/example_2.jpg" alt="Bild 3" /><br>
-<sub>Richtige Klassifikation, aber aus falschem Grund. Modell achtet auf Umgebung mehr als auf Palme. </sub>
+<sub>Richtige Klassifikation, aber aus falschem Grund. Modell achtet mehr auf Umgebung als auf Palme. </sub>
 </td></tr>
 </table>
 
