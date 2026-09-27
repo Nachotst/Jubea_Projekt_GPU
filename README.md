@@ -79,7 +79,8 @@ python app.py
 ```
 
 Die Anwendung erwartet ein trainiertes Modell, welches im Github hinterlegt ist (`Jubaea_with_val_resnet.pth`).
-In der Seite kann man dann ein beliebiges Foto hochladen und es klassifizieren lassen.
+Anschließend Seite unter http://127.0.0.1:5000 aufrufen.
+Auf der Seite kann man dann ein beliebiges Foto hochladen und es klassifizieren lassen.
 
 # Herausforderungen & Learnings
 
